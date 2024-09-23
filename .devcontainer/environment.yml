@@ -1,7 +1,11 @@
-name: <environment-name>
+name: ai4beg
 channels:
- - defaults
+  - defaults
 dependencies:
-- python=3.12
-- openai
-- python-dotenv
+  - python=3.12.4
+  - openai
+  - pip
+  - pip:
+      - python-dotenv
+      - azure-ai-inference
+      - tiktoken
